@@ -11,19 +11,13 @@
 
     <body>
         <py-title>Learning PyScript</py-title>
-        <div id="output1"></div>
-        <py-script>
-from datetime import datetime as dt
-import asyncio
-
-
-async def foo():
-    while True:
-        await asyncio.sleep(1)
-        pyscript.write("output1", dt.now())
-
-pyscript.run_until_complete(foo())
-
-        </py-script>
+        <py-inputbox id="question-box"></py-inputbox>
+        <py-button label="question-add-btn">
+num_of_questions = 0
+def on_click(event):
+    def make_question(*args, **kwargs):
+        
+        </py-button>
+        
     </body>
 </html>
