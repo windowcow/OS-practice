@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <body>
-        <py-title>Learning PyScript</py-title>
-        <py-inputbox id="question-box"></py-inputbox>
-        <py-button label="question-add-btn">
-num_of_questions = 0
-def on_click(event):
-    def make_question(*args, **kwargs):
-        
-        </py-button>
-        
-    </body>
+    <title>Todo App</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+    - paths:
+      - ./utils.py
+    </py-env>
+  </head>
+
+  <body class="container">
+    <!-- <py-repl id="my-repl" auto-generate="true"> </py-repl> -->
+  <!-- <py-script src="./makeList.py">  </py-script> -->
+
+  <main>
+    <div id="aaa">asdf</div>
+    <py-inputBox id="code-input-box" type="text" height="">
+
+  
+    </py-inputBox>
+    <py-script>
+import asyncio
+
+async def syncInputs(*args, **krgs):
+  while True:
+    <!-- Element("aaa").write(Element("code-input-box").value) -->
+    Element("aaa").write(Element("code-input-box").value)
+    await asyncio.sleep(1)
+
+pyscript.run_until_complete(syncInputs())
+    </py-script>
+  </main>
+</body>
 </html>
