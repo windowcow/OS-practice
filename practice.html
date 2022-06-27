@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>Todo App</title>
+    <title>quiz maker</title>
 
-    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-
+    <link rel="stylesheet" href="./quiz-maker.css">
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
     - paths:
@@ -17,15 +16,10 @@
   </head>
 
   <body class="container">
-    <!-- <py-repl id="my-repl" auto-generate="true"> </py-repl> -->
-  <!-- <py-script src="./makeList.py">  </py-script> -->
 
   <main>
+    <textarea id="code-input-box" ></textarea>
     <div id="aaa">asdf</div>
-    <py-inputBox id="code-input-box" type="text" height="">
-
-  
-    </py-inputBox>
     <py-script>
 import asyncio
 
